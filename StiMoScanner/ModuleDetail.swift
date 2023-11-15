@@ -13,7 +13,7 @@
 import SwiftUI
 
 let stimFrequencies = [Int](0...200)
-let stimCurrents = [UInt8](0...200)
+let stimCurrents = [UInt8](0...100)
 
 struct ModuleDetail: View {
     @Binding var stimParams: StimParameters
@@ -60,7 +60,7 @@ struct ModuleDetail: View {
                 Picker("Stim Current", selection: $stimParams.current)
                 {
                     ForEach(stimCurrents, id:\.self) {
-                        Text("\($0) µA")
+                        Text("\(Double($0) * 2.4, specifier: "%.0f") µA") // Current bits are 2.4 uA per bit
                     }
                 }
                 .pickerStyle(.wheel)
