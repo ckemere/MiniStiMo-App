@@ -17,10 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		361468B92B053B4A006E36AD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.4.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
 		362205992ABCFE540066E631 /* ModuleControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleControl.swift; sourceTree = "<group>"; };
 		3622059D2ABFD4640066E631 /* ModuleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetail.swift; sourceTree = "<group>"; };
 		96EC7A282966FED200D07500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		96F75A032962D9EF00D36D9F /* StiMoScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StiMoScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96F75A032962D9EF00D36D9F /* MiniStiMo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniStiMo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F75A062962D9EF00D36D9F /* MiniStiMoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStiMoApp.swift; sourceTree = "<group>"; };
 		96F75A082962D9EF00D36D9F /* DeviceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceList.swift; sourceTree = "<group>"; };
 		96F75A0A2962D9F100D36D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,18 +41,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		361468B82B053B4A006E36AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				361468B92B053B4A006E36AD /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		96F759FA2962D9EF00D36D9F = {
 			isa = PBXGroup;
 			children = (
 				96F75A052962D9EF00D36D9F /* MiniStiMo */,
 				96F75A042962D9EF00D36D9F /* Products */,
+				361468B82B053B4A006E36AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		96F75A042962D9EF00D36D9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96F75A032962D9EF00D36D9F /* StiMoScanner.app */,
+				96F75A032962D9EF00D36D9F /* MiniStiMo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96F75A022962D9EF00D36D9F /* StiMoScanner */ = {
+		96F75A022962D9EF00D36D9F /* MiniStiMo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96F75A122962D9F100D36D9F /* Build configuration list for PBXNativeTarget "StiMoScanner" */;
+			buildConfigurationList = 96F75A122962D9F100D36D9F /* Build configuration list for PBXNativeTarget "MiniStiMo" */;
 			buildPhases = (
 				96F759FF2962D9EF00D36D9F /* Sources */,
 				96F75A002962D9EF00D36D9F /* Frameworks */,
@@ -95,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = StiMoScanner;
-			productName = StiMoScanner;
-			productReference = 96F75A032962D9EF00D36D9F /* StiMoScanner.app */;
+			name = MiniStiMo;
+			productName = MiniStiMo;
+			productReference = 96F75A032962D9EF00D36D9F /* MiniStiMo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96F75A022962D9EF00D36D9F /* StiMoScanner */,
+				96F75A022962D9EF00D36D9F /* MiniStiMo */,
 			);
 		};
 /* End PBXProject section */
@@ -281,16 +291,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = StiMoScanner/StiMoScanner.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = MiniStiMo/MiniStiMo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"StiMoScanner/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4KXH2966B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StiMoScanner/Info.plist;
+				INFOPLIST_FILE = MiniStiMo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MiniStiMo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please allow Bluetooth, for this App is using Bluetooth to scan for nearby devices.";
@@ -311,6 +323,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kemerelab.ministimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -326,16 +339,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = StiMoScanner/StiMoScanner.entitlements;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = MiniStiMo/MiniStiMo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"StiMoScanner/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4KXH2966B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StiMoScanner/Info.plist;
+				INFOPLIST_FILE = MiniStiMo/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MiniStiMo;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Please allow Bluetooth, for this App is using Bluetooth to scan for nearby devices.";
@@ -356,6 +371,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kemerelab.ministimo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -378,7 +394,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96F75A122962D9F100D36D9F /* Build configuration list for PBXNativeTarget "StiMoScanner" */ = {
+		96F75A122962D9F100D36D9F /* Build configuration list for PBXNativeTarget "MiniStiMo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96F75A132962D9F100D36D9F /* Debug */,
