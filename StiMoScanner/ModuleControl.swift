@@ -78,12 +78,12 @@ struct ModuleControl: View {
                 {
                     Text("Reread Module Data")
                 }
-                Button(action: {
-                    //bleManager.disconnectDevice(module: module)
-                })
-                {
-                    Text("Disconnect Module")
-                }
+//                Button(action: {
+//                    //bleManager.disconnectDevice(module: module)
+//                })
+//                {
+//                    Text("Disconnect Module")
+//                }
             }
             
             VStack(alignment: .leading) {
