@@ -1,14 +1,14 @@
 //
-//  BLEScannerApp.swift
-//  BLEScanner
+//  MiniStMoApp.swift
+//  MiniStiMo Controller App
 //
-//  Created by Christian Möller on 02.01.23.
+//  by Caleb Kemere 2023
 //
 
 import SwiftUI
 
 @main
-struct BLEScannerApp: App {
+struct MiniStiMoApp: App {
     var body: some Scene {
         WindowGroup {
             DeviceList()

@@ -1,8 +1,8 @@
 //
-//  ContentView.swift
-//  BLEScanner
+//  BLEManagerClass.swift
 //
-//  Created by Christian Möller on 02.01.23.
+//
+//  Caleb Kemere 2023
 //
 
 import SwiftUI

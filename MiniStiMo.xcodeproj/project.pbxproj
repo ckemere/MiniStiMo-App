@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3622059A2ABCFE540066E631 /* ModuleControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362205992ABCFE540066E631 /* ModuleControl.swift */; };
 		3622059E2ABFD4640066E631 /* ModuleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622059D2ABFD4640066E631 /* ModuleDetail.swift */; };
-		96F75A072962D9EF00D36D9F /* StiMoScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F75A062962D9EF00D36D9F /* StiMoScannerApp.swift */; };
+		96F75A072962D9EF00D36D9F /* MiniStiMoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F75A062962D9EF00D36D9F /* MiniStiMoApp.swift */; };
 		96F75A092962D9EF00D36D9F /* DeviceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F75A082962D9EF00D36D9F /* DeviceList.swift */; };
 		96F75A0B2962D9F100D36D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F75A0A2962D9F100D36D9F /* Assets.xcassets */; };
 		96F75A0F2962D9F100D36D9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F75A0E2962D9F100D36D9F /* Preview Assets.xcassets */; };
@@ -21,10 +21,10 @@
 		3622059D2ABFD4640066E631 /* ModuleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDetail.swift; sourceTree = "<group>"; };
 		96EC7A282966FED200D07500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		96F75A032962D9EF00D36D9F /* StiMoScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StiMoScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		96F75A062962D9EF00D36D9F /* StiMoScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StiMoScannerApp.swift; sourceTree = "<group>"; };
+		96F75A062962D9EF00D36D9F /* MiniStiMoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniStiMoApp.swift; sourceTree = "<group>"; };
 		96F75A082962D9EF00D36D9F /* DeviceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceList.swift; sourceTree = "<group>"; };
 		96F75A0A2962D9F100D36D9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		96F75A0C2962D9F100D36D9F /* StiMoScanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StiMoScanner.entitlements; sourceTree = "<group>"; };
+		96F75A0C2962D9F100D36D9F /* MiniStiMo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MiniStiMo.entitlements; sourceTree = "<group>"; };
 		96F75A0E2962D9F100D36D9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96FF6D5D2965BF5E009BC20C /* BLEManagerClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManagerClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,7 +43,7 @@
 		96F759FA2962D9EF00D36D9F = {
 			isa = PBXGroup;
 			children = (
-				96F75A052962D9EF00D36D9F /* StiMoScanner */,
+				96F75A052962D9EF00D36D9F /* MiniStiMo */,
 				96F75A042962D9EF00D36D9F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,20 +56,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		96F75A052962D9EF00D36D9F /* StiMoScanner */ = {
+		96F75A052962D9EF00D36D9F /* MiniStiMo */ = {
 			isa = PBXGroup;
 			children = (
 				96EC7A282966FED200D07500 /* Info.plist */,
-				96F75A062962D9EF00D36D9F /* StiMoScannerApp.swift */,
+				96F75A062962D9EF00D36D9F /* MiniStiMoApp.swift */,
 				96FF6D5D2965BF5E009BC20C /* BLEManagerClass.swift */,
 				96F75A082962D9EF00D36D9F /* DeviceList.swift */,
 				362205992ABCFE540066E631 /* ModuleControl.swift */,
 				3622059D2ABFD4640066E631 /* ModuleDetail.swift */,
 				96F75A0A2962D9F100D36D9F /* Assets.xcassets */,
-				96F75A0C2962D9F100D36D9F /* StiMoScanner.entitlements */,
+				96F75A0C2962D9F100D36D9F /* MiniStiMo.entitlements */,
 				96F75A0D2962D9F100D36D9F /* Preview Content */,
 			);
-			path = StiMoScanner;
+			path = MiniStiMo;
 			sourceTree = "<group>";
 		};
 		96F75A0D2962D9F100D36D9F /* Preview Content */ = {
@@ -154,7 +154,7 @@
 				3622059E2ABFD4640066E631 /* ModuleDetail.swift in Sources */,
 				3622059A2ABCFE540066E631 /* ModuleControl.swift in Sources */,
 				96FF6D5E2965BF5E009BC20C /* BLEManagerClass.swift in Sources */,
-				96F75A072962D9EF00D36D9F /* StiMoScannerApp.swift in Sources */,
+				96F75A072962D9EF00D36D9F /* MiniStiMoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
